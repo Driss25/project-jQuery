@@ -1,0 +1,24 @@
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+article button,
+article a {
+    width: 250px;
+    height: 60px;
+}
+
+article h2 {
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+article:hover {
+    box-shadow: 20px 20px 10px grey;
+}
+
+

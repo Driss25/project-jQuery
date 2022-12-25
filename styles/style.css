@@ -1,0 +1,13 @@
+h1 {
+    
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+
+.article article:hover {
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}

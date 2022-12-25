@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="programming Learning html css c cpp python js javascript php javascript">
+    <meta name="author" content="Driss RAISS">
+    <title>DRS Learning</title>
+    <link rel="icon" type="image/png" href="../logo/logo.png">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/styleQuiz.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="../index.html">DRS Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto fs-4 mx-5">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="frontEnd.html">Front End</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="backEnd.html">Back End</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="fullStack.html">Full Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark p-5">
+        <div class="container py-5 text-white text-center">
+            <h1 id="heading">Quizz</h1>
+        </div>
+    </header>
+    <section class="container my-5 ">
+        <div id="myDiv">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                </div>
+            </div>
+            <div id="counter" class="h2 my-4 text-primary text-center fw-bold"><span id="m" class="border px-2 py-1 bg-opacity-25 bg-secondary">00</span> : <span class="border  bg-secondary bg-opacity-25 px-2 py-1" id="s">00</span></div>
+            <div id="question_answers">
+            </div>
+            <button class="btn btn-success fs-3 mx-auto d-block px-5 my-5" id="btnNext">Next ></button>
+        </div>
+        <button class="brn btn-outline-primary fs-1 p-3 fw-bolder my-5 mx-auto d-block rounded-3" id="startQuiz"
+            onclick="this.remove()">Start Quiz</button>
+        <div class="text-center" style="display: none;" id="result">
+            <h2 class="fs-1 fw-bolder my-5 text-primary">Result:</h2>
+            <p class="fs-3 my-3" id="note"></p>
+            <p id="msg" class="fs-4 my-4 fst-italic"></p>
+
+            <button class="btn btn-success fs-3" onclick="checkYourAnswers()">Check your answers</button>
+            <button class="btn btn-primary fs-3 mx-2" id="tryAgain">Try Again</button>
+            <button class="btn btn-success fs-3" onclick="backToHome()">Back to home</button>
+        </div>
+        <article id="article">
+
+        </article>
+    </section>
+    <!--Modale-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>You can't skip the question</h2>
+                <span id="close">&times;</span>
+            </div>
+            <div class="modal-body ">
+                <p>Please choose one of the available options. You cannot skip any question</p>
+            </div>
+        </div>
+    </div>
+    <!--End modale-->
+    <script src="../Scripts/jQuery.js"></script>
+    <script src="../Scripts/scriptQuiz.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+
+</body>
+
+</html>
